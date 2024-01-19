@@ -1,0 +1,162 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #3498db;
+  padding: 5px 0;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 12px;
+  margin-top: 10px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+button {
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.loader {
+  margin-top: 20px;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+.profile {
+  margin-top: 30px;
+}
+
+.options {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.repositories {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.repo-card {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.repo-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3498db;
+}
+
+.repo-card p {
+  margin: 0;
+}
+
+.options label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.search {
+  padding: 7px;
+  margin-top: 10px;
+  margin-left: 1000px;
+  color: #333;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+.options select,
+.options input {
+  padding: 8px;
+  margin-top: 10px;
+  color: #333;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  .repo-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .repo-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
